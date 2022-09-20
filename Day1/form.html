@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Sign Up</title>
+</head>
+
+<body>
+    <h1>Buat Account Baru!</h1>
+    <h2>Sign Up Form</h2>
+    <div>
+        <label for="firstName">First name:</label>
+        <br>
+        <input type="text" name="firtname" id="firtname">
+        <br>
+        <label for="lastName">Last name:</label>
+        <br>
+        <input type="text" name="lastname" id="lastname">
+    </div>
+    <br>
+    <div>
+        <label for="gender">Gender</label>
+        <br>
+        <input type="radio" name="gender" id="male"><span>Male</span>
+        <br>
+        <input type="radio" name="gender" id="female"><span>FeMale</span>
+        <br>
+        <input type="radio" name="gender" id="other"><span>Other</span>
+        <br>
+    </div>
+    <div>
+        <br>
+        <label for="nasionality">Nasionality:</label>
+        <br>
+        <select name="nasional" id="nasional">
+            <option value="indonesia">Indonesia</option>
+            <option value="india">India</option>
+            <option value="england">England</option>
+            <option value="germany">Germany</option>
+        </select>
+        <br>
+    </div>
+    <br>
+    <div>
+        <label for="language">Language Spoken:</label>
+        <br>
+        <input type="checkbox" name="bahasa" id="bahasa"><span>Bahasa Indonesia</span>
+        <br>
+        <input type="checkbox" name="english" id="english"><span>English</span>
+        <br>
+        <input type="checkbox" name="other" id="other"><span>Other</span>
+        <br>
+    </div>
+    <br>
+    <div>
+        <label for="bio">Bio:</label>
+        <br>
+        <textarea name="inputbio" id="inputbio" cols="30" rows="10"></textarea>
+        <br>
+        <form action="./welcome.html">
+            <input type="submit" name="signup" id="signup">
+        </form>
+    </div>
+
+</body>
+
+</html>
