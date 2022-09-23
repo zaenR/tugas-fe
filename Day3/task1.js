@@ -1,7 +1,7 @@
 var a = 5;
 let b = "kampus merdeka";
 const nama = "Budi";
-let terdaftar = false;
+let terdaftar = true;
 let lengkap_arr = [a, b, nama, terdaftar];
 
 function perkenalan() {
@@ -29,3 +29,4 @@ console.log("array = " +lengkap_arr[2])
 console.log("a adalah = " + a);
 console.log("b adalah = " +b);
 perkenalan();
+
