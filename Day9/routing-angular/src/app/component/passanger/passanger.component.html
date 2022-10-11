@@ -1,0 +1,41 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nama</th>
+      <th scope="col">Kota</th>
+      <th scope="col">action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cells of items; let i = index">
+      <td hidden id="tdIndex">{{ i }}</td>
+      <td>{{ cells.id }}</td>
+      <td>{{ cells.nama }}</td>
+      <td>{{ cells.kota }}</td>
+      <td>
+        <button
+          type="button"
+          class="btn btn-link btn-sm p-0 me-3"
+          (click)="onDelete(i)"
+        >
+          Delete
+        </button>
+        <button
+          type="button"
+          class="btn btn-link btn-sm p-0 me-3"
+          (click)="onEdit(cells, i)"
+        >
+          Edit
+        </button>
+        <button
+          type="button"
+          class="btn btn-link btn-sm p-0"
+          (click)="onDetail(cells)"
+        >
+          Detail
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

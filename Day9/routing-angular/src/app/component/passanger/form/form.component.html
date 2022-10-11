@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+      <div class="row rowinput">
+        <div class="col-md-3">
+          <label for="id">Id</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" id="idx" class="idx" hidden />
+          <input type="text" id="id" class="id" />
+        </div>
+      </div>
+      <div class="row rowinput">
+        <div class="col-md-3">
+          <label for="nama">Nama</label>
+        </div>
+        <div class="col-md-5">
+          <input type="text" id="nama" class="nama" />
+        </div>
+      </div>
+      <div class="row rowinput">
+        <div class="col-md-3">
+          <label for="kota">kota</label>
+        </div>
+        <div class="col-md-5">
+          <input type="text" id="kota" class="kota" />
+        </div>
+      </div>
+      <div class="row rowinput">
+        <div class="col-md-3"></div>
+        <div class="col-md-5 d-md-flex justify-content-end">
+          <button type="button" class="btn btn-primary" (click)="sendToChild()">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <app-passanger
+        [inputItem]="arr"
+        (onDelete)="onDelete($event)"
+        (onDetail)="onDetail($event)"
+      ></app-passanger>
+    </div>
+  </div>
+</div>
